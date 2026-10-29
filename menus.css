@@ -1,0 +1,121 @@
+/* задания 2, 2*, 3 — вертикальные меню */
+
+body {
+  margin: 0;
+  padding: 20px 30px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #33291f;
+  background: #f6efe4;
+}
+
+h1 { color: #6d1f2c; }
+h2 { color: #8a4a2e; margin-bottom: 14px; }
+
+/* задание 2: подменю выезжает сбоку */
+.nav {
+  width: 230px;
+  background: #6d1f2c;
+  box-shadow: 4px 4px 8px #d9c9b3;
+  padding: 4px;
+  margin-bottom: 30px;
+}
+
+.nav .pt {
+  display: block;
+  padding: 12px 16px;
+  margin: 2px 0;
+  background: #7d2b3a;
+  color: #f6efe4;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav .pt:hover { background: #93414f; }
+
+.item { position: relative; }
+
+/* спрятанное подменю справа от пункта */
+.item .drop {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  min-width: 200px;
+  background: #6d1f2c;
+  padding: 4px;
+  box-shadow: 4px 4px 8px #d9c9b3;
+  z-index: 10;
+}
+
+.item:hover .drop { display: block; }
+.item:hover > .pt { background: #93414f; }
+
+.drop_item {
+  display: block;
+  padding: 10px 14px;
+  margin: 2px 0;
+  background: #7d2b3a;
+  color: #f6efe4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.drop_item:hover { background: #93414f; }
+
+/* задание 2*: третий уровень */
+.sub { position: relative; }
+
+.sub .drop2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  min-width: 180px;
+  background: #6d1f2c;
+  padding: 4px;
+  box-shadow: 4px 4px 8px #d9c9b3;
+  z-index: 20;
+}
+
+.sub:hover .drop2 { display: block; }
+.sub:hover > .drop_item { background: #93414f; }
+
+/* задание 3: раскрывается вниз */
+.down-nav {
+  width: 230px;
+  background: #6d1f2c;
+  box-shadow: 4px 4px 8px #d9c9b3;
+  padding: 4px;
+}
+
+.down-nav .pt {
+  display: block;
+  padding: 12px 16px;
+  margin: 2px 0;
+  background: #7d2b3a;
+  color: #f6efe4;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.down-group:hover > .pt { background: #93414f; }
+
+.down-drop { display: none; }
+
+.down-group:hover .down-drop { display: block; }
+
+.down-item {
+  display: block;
+  padding: 9px 14px;
+  margin: 2px 0 2px 16px;
+  background: #f6efe4;
+  color: #6d1f2c;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.down-item:hover { background: #fff; }
