@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="140" viewBox="0 0 220 140">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a4a2e"/>
+      <stop offset="1" stop-color="#9c6b47"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="140" fill="url(#g)"/>
+  <circle cx="185" cy="24" r="40" fill="#ffffff14"/>
+  <circle cx="30" cy="126" r="26" fill="#ffffff10"/>
+  <rect x="8" y="8" width="204" height="124" fill="none" stroke="#ffffff66" stroke-width="1"/>
+  <text x="110" y="68" font-family="Georgia, serif" font-size="16" fill="#fff" text-anchor="middle">Гостиный двор</text>
+  <text x="110" y="92" font-family="Georgia, serif" font-size="12" fill="#ffffffb0" text-anchor="middle">Уфа &#183; 1824</text>
+</svg>
