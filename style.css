@@ -1,0 +1,120 @@
+/* Лабораторная работа №3. Позиционирование */
+
+body {
+  margin: 0;
+  padding: 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #33291f;
+  background: #f6efe4;
+}
+
+h1 { color: #6d1f2c; margin-bottom: 4px; }
+h2 { color: #8a4a2e; }
+h3 { color: #6d1f2c; font-size: 15px; margin: 0 0 8px; }
+
+/* меню */
+.top-panel {
+  overflow: hidden;
+  background: #6d1f2c;
+}
+
+.tp-link {
+  float: left;
+  display: block;
+  padding: 11px 22px;
+  color: #f6efe4;
+  text-decoration: none;
+  font-size: 15px;
+  border-right: 1px solid #8d3a49;
+}
+
+.tp-link:hover { background: #8d3a49; }
+
+.page-head {
+  padding: 18px 30px 6px;
+}
+
+/* колонки */
+.layout {
+  overflow: hidden;
+  padding: 10px 30px 0;
+}
+
+.col-left {
+  float: left;
+  width: 215px;
+}
+
+.col-right {
+  float: right;
+  width: 215px;
+}
+
+/* центральная колонка — обычный блок, не float */
+.col-mid {
+  overflow: hidden;
+  margin: 0 18px;
+}
+
+.col-left, .col-right {
+  background: #fffdf8;
+  border: 1px solid #e0d3bd;
+  padding: 14px 16px;
+}
+
+.side-list {
+  margin: 0 0 16px;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.side-list a { color: #6d1f2c; }
+.side-note { font-size: 13px; line-height: 1.5; color: #5c4f43; }
+
+/* карточки */
+.place {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  background: #fffdf8;
+  border: 1px solid #e0d3bd;
+}
+
+.place img {
+  float: right;
+  margin: 2px 0 8px 14px;
+  box-shadow: 2px 2px 5px #0003;
+}
+
+.place h4 { margin: 4px 0 8px; color: #8a4a2e; }
+.place p { margin: 0; font-size: 13px; line-height: 1.5; color: #5c4f43; }
+
+/* всплывающее пояснение */
+.slide-note {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 16px 18px;
+  background: rgba(109, 31, 44, 0.88);
+  color: #f6efe4;
+  font-size: 13px;
+  line-height: 1.55;
+  transition: left 0.3s;
+}
+
+.place:hover .slide-note { left: 0; }
+
+.mid-note { color: #7c6a58; font-size: 13px; }
+
+.page-foot {
+  clear: both;
+  margin: 20px 30px 0;
+  padding-top: 10px;
+  border-top: 1px solid #e0d3bd;
+  color: #7c6a58;
+  font-size: 12px;
+}
